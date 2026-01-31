@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Loopify – A→B Loop for Spotify",
+  "description": "Add A→B loop controls to Spotify Web Player for practice and study.",
+  "version": "1.0.0",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://open.spotify.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

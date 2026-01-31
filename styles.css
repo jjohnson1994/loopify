@@ -1,0 +1,88 @@
+/* Loopify – A→B Loop Controls for Spotify */
+
+.loopify-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 4px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 11px;
+  user-select: none;
+}
+
+.loopify-btn {
+  background: hsla(0, 0%, 100%, 0.1);
+  color: #b3b3b3;
+  border: none;
+  border-radius: 12px;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.loopify-btn:hover {
+  background: hsla(0, 0%, 100%, 0.2);
+  color: #fff;
+}
+
+.loopify-btn.active {
+  background: #1db954;
+  color: #000;
+}
+
+.loopify-btn.active:hover {
+  background: #1ed760;
+}
+
+/* Loop toggle glow when active */
+.loopify-btn.loop-toggle.active {
+  box-shadow: 0 0 8px rgba(29, 185, 84, 0.5);
+}
+
+.loopify-time {
+  color: #b3b3b3;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  min-width: 32px;
+  text-align: center;
+}
+
+.loopify-separator {
+  color: hsla(0, 0%, 100%, 0.3);
+  font-size: 11px;
+}
+
+/* Progress bar markers */
+.loopify-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  z-index: 10;
+  pointer-events: none;
+  transition: left 0.1s;
+}
+
+.loopify-marker-a {
+  background: #1db954;
+}
+
+.loopify-marker-b {
+  background: #e22134;
+}
+
+/* Loop region overlay */
+.loopify-region {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: rgba(29, 185, 84, 0.15);
+  z-index: 5;
+  pointer-events: none;
+  transition: left 0.1s, width 0.1s;
+}
