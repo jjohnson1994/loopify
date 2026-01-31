@@ -1,5 +1,3 @@
-/* Loopify – A→B Loop Controls for Spotify */
-
 .loopify-controls {
   display: flex;
   align-items: center;
@@ -39,7 +37,6 @@
   background: #1ed760;
 }
 
-/* Loop toggle glow when active */
 .loopify-btn.loop-toggle.active {
   box-shadow: 0 0 8px rgba(29, 185, 84, 0.5);
 }
@@ -57,7 +54,6 @@
   font-size: 11px;
 }
 
-/* Progress bar markers */
 .loopify-marker {
   position: absolute;
   top: 0;
@@ -76,7 +72,6 @@
   background: #e22134;
 }
 
-/* Loop region overlay */
 .loopify-region {
   position: absolute;
   top: 0;
